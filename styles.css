@@ -1,0 +1,128 @@
+:root {
+    --color-primary: #04364A;
+    --color-secondary: #176B87;
+    --color-tertiary: #64CCC5;
+    --color-accent: #DAFFFB;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-secondary);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Barra de navegación */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Cambio de color al hacer hover */
+nav a:hover {
+    color: var(--color-tertiary);
+}
+
+/* Ajusta el contenido debajo de la barra de navegación */
+.main-content {
+    margin-top: 60px;
+}
+
+/* Section Style */
+section {
+    padding: 40px 0;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+/* Formulario de contacto */
+.form-field {
+    margin-bottom: 20px;
+}
+
+/* Botón de enviar */
+.primary-button {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Estilo para cajas de entrada de texto y área de texto */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-accent);
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    resize: none; /* Bloquear que el usuario pueda cambiar el tamaño del área de texto */
+}
+
+/* Estilo para el nombre y el título */
+.name {
+    font-size: 48px; /* Tamaño triple */
+    text-align: center;
+}
+
+.job-title {
+    font-size: 24px; /* Mitad de tamaño */
+    text-align: center;
+}
+
+/* Estilo para la sección Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crear tres columnas con el mismo ancho */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.skill-column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-column h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
